@@ -1,2 +1,2 @@
 # assi23.github.io
-Website didático de WebDesign
+Website para treinamento didático de WebDesign
