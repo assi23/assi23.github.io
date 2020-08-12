@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&display=swap");
+
+/* cor de fundo da pagina e texto*/
+body {
+  background-color: black;
+}
+
+h1 {
+  color: floralwhite;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 350%;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  text-decoration: underline greenyellow;
+  text-shadow: 2px 2px 3px green;
+  transition: .5s;
+}
+
+h1:hover {
+  color: rgb(238, 220, 183);
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: greenyellow;
+  font: 150% serif;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+.sectImage {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.logoJ {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+
+  line-height: 20px;
+  display: flex;
+  transition: .7s;
+}
+
+.logoJ:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+  box-shadow: 0 0 10px yellow;
+}
+
+.logoC {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+
+  line-height: 20px;
+  display: flex;
+  transition: .7s;
+}
+
+.logoC:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+  box-shadow: 0 0 10px deepskyblue;
+}
+
+.logoH {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+
+  line-height: 20px;
+  display: flex;
+  transition: .7s;
+}
+
+.logoH:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+  box-shadow: 0 0 10px orangered;
+}
+
+.container p{
+  color:black;
+  font-size: small;
+  font-style: italic;
+  text-shadow: none;
+}
+
+.container{
+  background-color: whitesmoke;
+  width: 640px;
+  display: block;
+  margin:0 auto;
+  border: 5px solid green;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgb(89, 161, 16);
+  line-height: 20px;
+}
+
+#image {
+  width: 500px;
+
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#pc{
+  width: 40px;
+}
+
+.sectInfo {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  background-color:rgb(102, 47, 255);
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 20px;
+  border-radius: 100px;
+
+}
+
+#Info{
+  display: inline;
+}
+
+
+#coffee {
+  width: 80px;
+  height: 80px;
+}
+
+#coded {
+  color: lawngreen;
+}
+
+#coded:hover {
+  color: rgb(96, 179, 13);
+  cursor: pointer;
+}
+
