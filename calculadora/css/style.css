@@ -72,3 +72,18 @@ background: rgb(245, 137, 245);
 #program{
     color: black;
 }
+
+#coded{
+    /* border: 10px solid;
+    border-image: linear-gradient(45deg, deeppink,purple, blue) 1; */
+    background: -webkit-linear-gradient(deeppink,purple, blue);
+    -webkit-background-clip: text; /*defini o tipo texto*/
+    -webkit-text-fill-color: transparent; /*defini o degrade*/
+    margin-top: 100px;
+}
+
+#coded:hover{
+    background: -webkit-linear-gradient(rgb(20, 255, 59),rgb(0, 128, 117));
+    -webkit-background-clip: text; /*defini o tipo texto*/
+    -webkit-text-fill-color: transparent; /*defini o degrade*/
+}
