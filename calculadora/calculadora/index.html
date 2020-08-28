@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="JavaScript" src="js/main.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/129697/isolated/lists/2cf64de279ce43f6c0b27d81656f2fbb-icone-de-circulo-calculadora-3.png">
+    <title>Desafio Calculadora</title>
+    
+</head>
+<body>
+    <form action="" name="calc">
+        <div id="calculator">
+            <input type="text" id="visor" name="visor">
+
+            <div id="firstLine">
+                <input type="button" value="7" class="btn border" onclick="btn(value)">
+                <input type="button" value="8" class="btn border" onclick="btn(value)">
+                <input type="button" value="9" class="btn border" onclick="btn(value)">
+                <input type="button" value="/" id="e" class="btn border" onclick="btn(value)">
+            </div>
+                <div id="secondtLine">
+                    <input type="button" value="4" class="btn border" onclick="btn(value)">
+                    <input type="button" value="5" class="btn border" onclick="btn(value)">
+                    <input type="button" value="6" class="btn border" onclick="btn(value)">
+                    <input type="button" value="*" id="e" class="btn border" onclick="btn(value)">
+                 </div>
+                    <div id="thirdLine">
+                        <input type="button" value="1" class="btn border" onclick="btn(value)">
+                        <input type="button" value="2" class="btn border" onclick="btn(value)">
+                        <input type="button" value="3" class="btn border" onclick="btn(value)">
+                        <input type="button" value="-"  id="e"class="btn border" onclick="btn(value)">
+                    </div>
+                        <div id="fourthLine">
+                            
+                            <input type="button" value="0" class="btn border" onclick="btn(value)">
+                            <input type="button" value="." id="e" class="btn border" onclick="btn(value)"> 
+                            <input type="button" value="C" id="e"class="btn border" onclick="reset()">                                
+                            <input type="button" value="+" id="e" class="btn border" onclick="btn(value)">                        
+                        </div>
+                        <div id="calcula"> 
+                            <input type="button" value="=" id="c"class="btn border" onclick="calculate()"> <!-- função que calcula--> 
+                        </div>
+                
+        </div> 
+
+</body>
+
+
+<footer id="coded">
+        <p> 
+                <a href="https://github.com/assi23">
+                    Coded BY: Guilherme
+                </a>       
+        </p>
+</footer>
+
+</html>
