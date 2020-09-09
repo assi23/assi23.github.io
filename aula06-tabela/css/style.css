@@ -1,0 +1,85 @@
+body{
+    background-color: brown;
+    color: cyan;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+    transition: .5s;
+}
+
+h1:hover{
+    transform: translatey(5px);
+}
+
+li a{
+    color: cyan;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: darkcyan;
+}
+
+li a:active{
+    color: deepskyblue;
+}
+
+footer h2 a{
+ border: 2px ridge beige;
+ background-color: bisque;
+ color: brown;
+ padding: 5px ;
+ border-radius: 3px;
+ text-decoration: none;
+}
+
+footer h2 a:hover{
+    border: 2px ridge bisque;
+    background-color: beige;
+    color: deepskyblue;
+}
+
+footer h2 a:active{
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px  cyan;
+}
+
+table#tabela01{
+    border: 2px solid black;
+    border-collapse: collapse; /* juntar as linhas da borda*/
+    background-color: ivory;
+    color: black;
+}
+
+#tabela01 td{ /* cada célula da tabela - td- table data*/
+    border: 1px dashed black;
+    padding: 10px;
+}
+
+#tabela01 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
+    background-color: cyan;
+}
+
+#tabela02{
+    background-color: whitesmoke;
+    color: black;
+    margin: 0 auto; /*alinhamento*/
+    font-size: 23px;
+    padding: 5px;
+    width: 400px;
+}
+ 
+#tabela02 td,#tabela02 th{
+    border: 1px solid black;
+    text-align: center;
+    height: 40px;
+}
+
+#tabela02 th{
+    background-color: cadetblue;
+}
+
+
+
