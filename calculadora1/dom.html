@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+    <link rel="shortcut icon" href="https://miro.medium.com/max/256/1*5q4HfZZYtdTF0YqhqBpWQQ.png" type="image/x-icon">
+
+    <style>
+        .quadrado-vermelho{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #caixaColorida {
+           background-color:tomato;
+           width: 200px;
+           height: 200px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1> DOM - Documento Object Model </h1>
+    <h2> Modelo Objeto Documento</h2>
+
+    <div class="quadrado-vermelho">
+    </div>
+
+    <h2> Elementos de Lista </h2>
+    <ul>
+        <li class="js-target"> Não  alterado </li>
+        <li class="js-target">  Não  alterado </li>
+        <li> Não sera alterado </li>
+        <li class="js-target">  Não  alterado </li>
+        <li> Não sera alterado </li>
+        <li class="js-target">  Não  alterado </li>
+    </ul>
+
+    <h2> Eventos e "Escuta"</h2>
+    <button class="botao-evento"> Clique!</button>
+
+    <h2>Manipulando Entrada e escrevendo no documento</h2>
+    <input type="text" id="entrada" placeholder="Digite algo"> <!--placeholder dica para pessoa-->
+    <h3 id="saida" style="background-color:limegreen;">  nada ainda :( </h3>
+
+    <h2>Escrevendo a cor do quadrado</h2>
+   <div id="caixaColorida"></div>
+   <input type="text" id="entradaCor" placeholder="Digite o nome da cor">
+
+<h2> Delegar Eventos </h2>
+   <div class="container">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+  </div>
+
+
+    <script>
+        //mudar a cor do quadrado vermelho
+        //utilizando js
+        const quadrado = document.querySelector('.quadrado-vermelho');
+        quadrado.style.backgroundColor = 'Purple';
+
+
+        //ira selecionar todos os js-target ---- lenght comprimento
+        const elementsToChange = document.querySelectorAll('.js-target');
+        for (let i = 0; i < elementsToChange.length; i++) {
+        const currentElement = elementsToChange[i];
+        currentElement.innerText = "Modificado por JavaScript!";
+        };
+
+
+         //Eventos e Escuta
+         const button = document.querySelector('.botao-evento');
+
+         //Função de chamada (call-back Function) escuta
+         button.addEventListener('click', function () {
+         alert("Opa!");
+         });
+
+
+         //Manipulando entrada e saída no DOM
+         const  entrada = document.querySelector('#entrada');
+         const saida = document.querySelector('#saida');
+
+         entrada.addEventListener('keyup', function(){
+             saida.innerText = entrada.value;
+         });
+
+         //Alterando a cor da caixa
+       const caixaColorida = document.querySelector('#caixaColorida');
+       const cor = document.querySelector('#entradaCor');
+      
+       //Adicionando a escuta
+       cor.addEventListener('change', function(){
+           caixaColorida.style.backgroundColor = cor.value;
+       });
+
+
+       //Delegar eventos
+       document.querySelector('.container').addEventListener('click', 
+       function(event){
+        alert(`Você clicou no botão ${event.target.innerText}`);
+       });
+
+
+
+    </script>
+
+    
+</body>
+</html>
