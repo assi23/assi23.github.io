@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com tags semântica</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <h1> Tabela </h1>
+    <h2> Tags 
+        <span class="sublinhado">semânticas</span>
+        HTML para tabelas
+    </h2>
+    <table id="tabela02">
+        <caption> Verdureira do Gui</caption> <!-- legenda -->
+
+        <thead> <!-- Cabeçalho-->
+            <tr> <!-- Fileira -->
+                <th colspan="4"> 🍉 🍇 Tudo Fresquinho para você 🍓 🍈</th> <!-- Coluna 1-->
+                <th></th> <!-- Coluna 2-->
+                <th></th> <!-- Coluna 3-->
+                <th></th> <!-- Coluna 4-->
+            </tr>
+
+            <tr> <!-- table row -- fileira-->
+    <th></th> <!-- coluna 1-->
+    <th>Foto</th> <!-- coluna 2-->
+    <th>Nome</th> <!-- coluna 3-->
+    <th>Preço</th> <!-- coluna 4-->
+            </tr>
+        </thead> <!-- Fim do cabeçalho da tabela -->
+
+        <tbody> <!-- corpo 1 da tabela frutas-->
+
+        <tr><!-- Primeira linha-->
+            <td rowspan="3">Frutas</td> <!-- Coluna 1-->
+            <td><img src="./images/morango.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+            <td>Morango</td> <!-- Coluna 3-->
+            <td> R$ 5,00</td> <!-- Coluna 4-->
+        </tr>
+
+        <tr><!-- Segunda linha-->
+            <td><img src="./images/pitaya.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+            <td>Pitaya </td> <!-- Coluna 3-->
+            <td>R$ 17,00</td> <!-- Coluna 4-->
+        </tr>
+
+        <tr><!-- Terceira linha-->
+            <td><img src="./images/acai.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+            <td>Açaí</td> <!-- Coluna 3-->
+            <td>R$ 8,00</td> <!-- Coluna 4-->
+        </tr>
+        </tbody> <!-- Fim corpo 1 da tabela-->
+
+        <tbody> <!-- corpo 2 da tabela Legumes-->
+
+            <tr><!-- Primeira linha-->
+                <td rowspan="3">Legumes</td> <!-- Coluna 2-->
+                <td><img src="./images/mandioca.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                <td>Mandioca</td> <!-- Coluna 3-->
+                <td> R$ 3,75</td> <!-- Coluna 4-->
+            </tr>
+    
+            <tr><!-- Segunda linha-->
+                <td><img src="./images/cenoura.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                <td>Cenoura</td> <!-- Coluna 3-->
+                <td>R$ 1,65</td> <!-- Coluna 4-->
+            </tr>
+    
+            <tr><!-- Terceira linha-->
+                <td><img src="./images/batata.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                <td>Batata</td> <!-- Coluna 3-->
+                <td>R$ 3,50</td> <!-- Coluna 4-->
+            </tr>
+            </tbody> <!-- Fim corpo 2 da tabela-->
+
+            <tbody> <!-- corpo 3 da tabela Cereias-->
+
+                <tr><!-- Primeira linha-->
+                    <td rowspan="3">Cereias</td> <!-- Coluna 1-->
+                    <td><img src="./images/milho.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                    <td>Milho</td> <!-- Coluna 3-->
+                    <td> R$ 1,75</td> <!-- Coluna 4-->
+                </tr>
+        
+                <tr><!-- Segunda linha-->
+                    <td><img src="./images/arroz.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                    <td>Arroz </td> <!-- Coluna 3-->
+                    <td>R$ 9,65</td> <!-- Coluna 4-->
+                </tr>
+        
+                <tr><!-- Terceira linha-->
+                    <td><img src="./images/Trigo.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
+                    <td>trigo</td> <!-- Coluna 3-->
+                    <td>R$ 4,50</td> <!-- Coluna 4-->
+                </tr>
+                </tbody> <!-- Fim corpo 3 da tabela-->
+
+                <tfoot id="foot"> <!-- rodapé da tabela-->
+                    <tr> <!-- Row -- Fileira ou linha-->
+                        <th colspan = '4'> 
+                            Faça o seu pedido on-line
+                        </th>
+                    </tr>
+                </tfoot>
+    </table>
+</body>
+</html>  
