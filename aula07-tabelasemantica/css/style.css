@@ -8,7 +8,7 @@ body{
     border-collapse: collapse; /* juntar as linhas da borda*/
     background-color: rgb(255, 186, 179);
     color: black;
-    width:  800px;
+    width:  1000px;
     height: 500px;
     margin: 0 auto;
 }
@@ -28,3 +28,12 @@ body{
 #tabela1 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
     background-color: rgb(247, 210, 206);
 }
+
+#tabela1 td:hover{
+ background-color: rosybrown;
+}
+
+
+#tabela1 tr:hover{
+    background-color: rosybrown;
+   }
