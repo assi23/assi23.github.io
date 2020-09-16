@@ -4,7 +4,7 @@ body{
 }
 
 #tabela1{
-    border: 2px solid black;
+    border: 2px solid orange;
     border-collapse: collapse; /* juntar as linhas da borda*/
     background-color: rgb(255, 186, 179);
     color: black;
@@ -21,7 +21,7 @@ body{
 
 .cabecalhoERodape{
     text-align: center;
-    color:  purple;
+    color:  rgb(155, 2, 2);
 }
 
 #tabela1 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
