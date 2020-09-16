@@ -1,0 +1,29 @@
+body{
+    background-color: teal;
+
+}
+
+#tabela1{
+    border: 2px solid black;
+    border-collapse: collapse; /* juntar as linhas da borda*/
+    background-color: rgb(255, 186, 179);
+    color: black;
+    width:  800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+#tabela1 td{ /* cada célula da tabela - td- table data*/
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cabecalhoERodape{
+    text-align: center;
+    color:  purple;
+}
+
+#tabela1 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
+    background-color: rgb(247, 210, 206);
+}
