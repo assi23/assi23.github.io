@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="https://vk.com/sticker/1-16577-128" type="image/x-icon">
+</head>
+<body>
+ <header>
+     <h1> Jogo em HTML, CSS e JS </h1>
+     <h2> Pedra, Papel e tesoura</h2>
+ </header>
+
+ <section class="placar">
+     <div id="jogador" class="badge">Jogador</div> <!-- div quebra linha naturalmente-->
+     <div id="computador" class="badge">CPU</div>
+     <span id="placar-jogador"> 0 </span> : <span id="placar-computador">0</span> <!-- não quebra a linha-->
+ </section>
+
+ <section class="resultado">
+     <p> Resultado do Jogo </p>
+ </section>
+
+ <section class="escolhas">
+     <button class="escolha" id="pedra">✊🏼</button>
+     <button class="escolha" id="papel">✋🏼</button>
+     <button class="escolha" id="tesoura">✌🏼</button>
+ </section>
+
+ <p id="jogada"> Escolha sua jogada! ⌚️🥱 </p>
+    
+
+
+
+
+
+<!-- ----------- Linkagem do JS -------------- -->
+<script src="./js/main.js"></script>
+</body>
+</html>
