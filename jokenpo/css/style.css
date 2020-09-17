@@ -22,7 +22,7 @@ header{
 .placar{
     margin: 20px auto; /*centralizar a caixa*/
     background: linear-gradient(to right, red, purple);
-    border-radius: 15px;
+    border-radius: 25px;
     text-align: center;
     width: 200px;
     font-size: 42px;
@@ -31,7 +31,7 @@ header{
 }
 
 .badge{
-    background-color: crimson;
+    background-color: red;
     font-size: 14px;
     padding: 2px 15px;
 }
@@ -39,13 +39,16 @@ header{
 #jogador{
     position: absolute;
     top: 30px;
-    left: -80px;
+    left: -84px;
+    border-radius: 3px;
 }
 
 #computador{
     position: absolute; /*ao colar o absolute podemos definir o local dele na pagina*/
     top: 30px;
-    right: -50px;
+    right: -57px;
+    background-color: purple;
+    border-radius: 3px;
 }
 
 /*------ Resultado do Jogo ------*/
