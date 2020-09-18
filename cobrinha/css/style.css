@@ -1,13 +1,14 @@
-body{
-    background-color:#242424;
-    color: deepskyblue;
+body {
+    background-color: #242424;
+    color: cyan;
     height: 92vh;
-    width: 95vh;
+    width: 95vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+ }
+ 
 
 footer{
     margin-top: 15px;
