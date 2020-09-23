@@ -2,6 +2,10 @@ body{
     background-color: black;
     color: red;
 }
+h1,h2{
+    text-align: center;
+}
+
 
 #tabela1{
     border: 3px solid orange;
