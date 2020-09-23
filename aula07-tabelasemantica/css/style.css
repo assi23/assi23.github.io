@@ -24,7 +24,7 @@ body{
     color:  rgb(155, 2, 2);
 }
 
-#tabela1 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
+#tabela1 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo variado*/
     background-color: rgb(247, 210, 206);
 }
 
@@ -42,12 +42,12 @@ body{
  /* ---------- Tabela 2 ----------*/  
  #tabela02{
     border: 3px solid orange;
-    box-shadow: 4px 4px 4px  orange;
     border-collapse: collapse; /* juntar as linhas da borda*/
     background-color: rgb(255, 186, 179);
     color: black;
     margin: 0 auto;
     text-align: center;
+    width: 640px;
  }  
 
  #tabela02 td{
@@ -61,7 +61,7 @@ body{
 }
 
 
- #tabela02 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo ciano*/
+ #tabela02 tr:nth-child(even) { /*Fileira - tr - tablw row - linhas pares com fundo, even == par*/
     background-color: rgb(247, 210, 206);
 }
 

@@ -13,29 +13,27 @@
         <span class="sublinhado">semânticas</span>
         HTML para tabelas
     </h2>
+    <!-- colspan junta as colunas, rowspan junta as linhas(uma embaixo da outra)-->
     <table id="tabela02">
         <caption> Verdureira do Gui</caption> <!-- legenda -->
 
         <thead> <!-- Cabeçalho-->
             <tr> <!-- Fileira -->
-                <th colspan="4"> 🍉 🍇 Tudo Fresquinho para você 🍓 🍈</th> <!-- Coluna 1-->
-                <th></th> <!-- Coluna 2-->
-                <th></th> <!-- Coluna 3-->
-                <th></th> <!-- Coluna 4-->
+                <th colspan="4"> 🍉 🍇 Tudo Fresquinho para você 🍓 🍈</th> <!-- table head- cabeçalho 1-->
             </tr>
 
             <tr> <!-- table row -- fileira-->
-    <th></th> <!-- coluna 1-->
-    <th>Foto</th> <!-- coluna 2-->
-    <th>Nome</th> <!-- coluna 3-->
-    <th>Preço</th> <!-- coluna 4-->
+    <th></th> <!-- table head- cabeçalho 1-->
+    <th>Foto</th> <!-- table head- cabeçalho 2-->
+    <th>Nome</th> <!--table head- cabeçalho 3-->
+    <th>Preço</th> <!-- table head- cabeçalho 4-->
             </tr>
         </thead> <!-- Fim do cabeçalho da tabela -->
 
         <tbody> <!-- corpo 1 da tabela frutas-->
 
         <tr><!-- Primeira linha-->
-            <td rowspan="3">Frutas</td> <!-- Coluna 1-->
+            <td rowspan="3">Frutas</td> <!-- Coluna 1--> <!-- ocupa o numero de linhas que eu escolher-->
             <td><img src="./images/morango.png" alt="" height="64" width="64" class="icone"></td> <!-- Coluna 2-->
             <td>Morango</td> <!-- Coluna 3-->
             <td> R$ 5,00</td> <!-- Coluna 4-->
@@ -105,6 +103,7 @@
                         </th>
                     </tr>
                 </tfoot>
+                
     </table>
 </body>
 </html>  
