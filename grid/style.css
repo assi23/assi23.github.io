@@ -1,0 +1,52 @@
+body{
+    background-color: indigo;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline deepskyblue;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: aquamarine;
+}
+
+/*---------------grid 1-----------------*/
+
+.grid-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    margin: 0 auto;
+}
+
+.grid-item{
+    background-color: aqua;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+/*---------------grid 2-----------------*/
+
+.grid-container2{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+}
+
+.grid-item2{
+    background-color: red;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
