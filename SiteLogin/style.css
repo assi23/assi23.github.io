@@ -7,7 +7,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5) 100%),
     url(./image/fundo.gif);
   background-repeat: no-repeat;
-  height: 800px;
+  height: 665px;
   width: 900px;
   background-position: center;
   background-size: cover;
@@ -40,7 +40,6 @@ div {
 #titulo {
   background-color: darkred;
   color: white;
-  text-decoration: underline white;
 
   height: 50px;
   width: 100%;
@@ -56,6 +55,10 @@ div {
 }
 
 .insert {
+    height: 20px;
+
+    padding: 5px;
+
   display: grid;
   justify-content: center;
   align-items: center;
@@ -67,7 +70,7 @@ div {
 
 .insert:hover {
   background: firebrick;
-  border: none;
+
 
   cursor: pointer;
 }
@@ -143,7 +146,6 @@ footer a:hover {
   background: brown;
   text-align: center;
   color: white;
-  text-decoration: underline;
 
   font-size: 25px;
 }
