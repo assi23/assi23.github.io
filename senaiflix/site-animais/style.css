@@ -1,0 +1,143 @@
+/* Reset básico*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline purple;
+    font-size: 64px;
+    background-color: black;
+    border: 5px solid purple;
+    color: white;
+    width: 100%;
+}
+
+#hi{
+    margin-left: 50px ;
+    width: 30%;
+    border-radius: 10px;
+    height: 100px;
+}
+
+#lobo{
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.estilo{
+    background-color: indigo;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+/* Container */
+.container{
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0 20px;
+}
+
+@media (min-width:1024px){
+    .container{
+        max-width: 1500px;
+        padding: 0;
+    }
+    .estilo{
+        font-size: 30px;
+        height: 70px;
+    }
+}
+
+/* linha */
+.row{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/*elemtos não sao maiores que as linhas*/
+.row:before,
+.row:after {
+    content: "";
+    display:table;
+}
+
+.row:after{
+    clear:both
+}
+
+/* Colunas */
+
+  .col{
+    display: inline-grid;
+    grid-column-gap: 50px;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    margin-top: 10px;
+  }
+
+
+/*colunas*/
+@media(min-width:640px){ /*configuração moto g4*/
+    h1{
+        width: 100%;
+    }
+
+    #hi{
+        margin-top: 15px;
+        width: 30%;
+        border-radius: 10px;
+        height: 190px;
+    }
+    #lobo{
+        border-radius: 10px;
+        width: 30%;
+        margin-left: 150px;
+    }
+    .col1{
+        width: 33.3333%;
+    }
+    .estilo{
+        margin-top: 10px;
+        height: 120px;
+        font-size: 23px;
+    }
+}
+
+@media(min-width:1024px){
+    h1{
+        width: 100%;
+    }
+    .col3{
+        width: 33.3333%;
+    }
+    .estilo{
+        height: 120px;
+        font-size: 30px;
+    }
+    #hi{
+        margin-left: 100px ;
+        width: 20%;
+        border-radius: 10px;
+        height: 200px;
+    }
+    
+    #lobo{
+        margin-left: 380px;
+        width: 20%;
+        border-radius: 10px;
+    }
+}
+
+
+
+

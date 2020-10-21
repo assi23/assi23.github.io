@@ -1,0 +1,127 @@
+/*Variáveis do CSS na raiz do documento*/
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+
+  /*Tamanho da caixa definido pelo programador*/
+  box-sizing: border-box; /*deixa o tamanho padrao sem que o padding interfira*/
+}
+
+/* Estilizando o corpo  da page */
+body {
+  background: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; /*negrito*/
+  font-size: 40px;
+
+  margin-left: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilizando a parte principal */
+.filme-principal {
+  font-size: 16px;
+  height: 400px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5) 100%),
+    url("../img/whoami.jpg");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container {
+    margin-left: 20px;
+  }
+  
+  .filme-principal .container {
+    width: 50%; /*quebrou a linha*/
+  }
+
+  .titulo {
+    font-size: 40px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  
+    margin-top: 15%;
+  }
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Estilizando os botões */
+.botao {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 12px;
+  border: none;
+
+  padding: 15px 30px;
+  margin-right: 8px;
+
+  cursor: pointer;
+  transition: 300ms ease all;
+}
+
+.botao:hover {
+  background-color: #fff;
+  color: var(--preto);
+}
+
+/*Responsividade*/
+@media screen and (max-width: 800px){
+    header .container{
+        flex-direction: column;
+    }
+    header .logo{
+        font-size: 24px;
+    }
+    .botao{
+        width: 190px;
+        height: 60px;
+
+        margin-top: 5px;
+    }
+    .filme-principal{
+        height: 500px;
+
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    }
+
+}
