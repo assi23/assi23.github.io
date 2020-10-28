@@ -1,0 +1,45 @@
+header{
+    background-image: url(./img/sistemasolar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article img{
+    height:  auto !important; 
+    width: 95%;
+
+    transition: 300ms;
+}
+
+article img:hover{
+    opacity: .7;
+}
+
+#thirdrow{
+    height: 300px !important;
+    width: 95%;
+}
+
+.card{
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    transition: 300ms;
+}
+
+.card:hover{
+    box-shadow: 0 0  30px rgb(48, 48, 48);
+}
+
+.card-body h3{
+    margin-top: 7px;
+    text-decoration: underline;
+}
+
+.modal-content{
+    width: 600px;
+}
+
+btn{
+    border: grey;
+}
