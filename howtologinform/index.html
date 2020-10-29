@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logoimg.png" type="image/x-icon">
+</head>
+<body>
+
+    <h2> Login Form</h2>
+
+    <!-- BOTÃO PARA ABRIR O MODAL  -->
+    <button onclick="document.getElementById('id01').style.display='block'"
+     class="login"> Login </button>
+
+    <!-- CRIANDO O MODAL  -->
+
+    <div id="id01" class="modal"> 
+
+       <form class="modal-content animate"  action="/action_page.php"
+       method="post">
+       <div class="imgcontainer">
+           <span
+           onclick="document.getElementById('id01').style.display='none'"
+           class="close" title="Fechar Modal"> &times;</span> <!-- &times; é um X -->
+
+           <img src="./img/avatar.webp" alt="Avatar" class="avatar">
+       </div>
+
+       <div class="container">
+           <label for="uname"> <b>Nome de usuário</b> </label>
+           <input type="text" placeholder="Insira seu nome de usuário" name="uname"
+           required>
+
+           <label for="psw"> <b>Senha</b> </label>
+           <input type="password" placeholder="Insira sua senha" name="psw"
+           required>
+
+           <button type="submit">Login</button>
+
+           <label>               
+               <input type="checkbox" checked="checked" name="remember">
+               <label for="remember"> mantenha-me conectado </label>
+               
+           </label>
+       </div>
+
+       <div id="container" style="background-color: #f1f1f1;">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn"> Cancelar </button>
+        <span class="psw"> Esqueceu sua  <a href="#"> senha?</a></span>
+    </div>
+    </form>    
+    </div>
+
+    <script>
+        //Pega o modal
+        var modal = document.getElementById('id01');
+
+        //Quando o usuario clicar fora do modal ira fechar o mesmo
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
