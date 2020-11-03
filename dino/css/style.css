@@ -3,7 +3,16 @@ body{
 }
 
 .dino {
-    background: green;
+    background: url('../img/dino.png');
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.cacto{
+    background: url('../img/cactus.png');
     width: 60px;
     height: 60px;
 

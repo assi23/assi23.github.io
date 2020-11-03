@@ -30,13 +30,44 @@ function pular(){
             //atualizar a posição na tela
             dino.style.bottom = dinoPosition + 'px';
             }
-        },50);
+        },20);
     } else{
             //incrementar o dino
             dinoPosition += 20; 
             //atualiza a posição na tela
             dino.style.bottom = dinoPosition + 'px';
         }
-    },30);
+    },20);
     
-};
+}
+
+//criação do cacto 
+const background = document.querySelector('.background');
+
+function criarCacto (){
+    let cactoPosition = 1000;
+   const cacto = document.createElement ('div');
+   //tempo aleatorio entre 1 e 6 segundos para criação dos cactos
+   let tempoRandom = Math.random() * 6000 + 100;
+   //adiciona uma class ao cacto
+   cacto.classList.add('cacto');
+   //posiciona o cacto a 1000px a esquerda
+   cacto.style.left = 1000 + 'px';
+   //aparece o cacto na tela
+   background.appendChild(cacto);
+
+   let intervaloEsquerda = setInterval(() => {
+    if(cactoPosition <= -60){
+        clearInterval(intervaloEsquerda);
+        //remover cacto da tela
+        background.removeChild(cacto);
+    } else{
+        //movimentação do cacto
+        cactoPosition -= 10;
+        cacto.style.left = cactoPosition + 'px';
+    }
+   },20);
+   let tempoCacto = setTimeout(criarCacto, tempoRandom);
+}
+
+criarCacto();
